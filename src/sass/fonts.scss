@@ -1,0 +1,29 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Inter-Regular";
+  font-style: normal;
+  font-display: swap;
+  src: local("Inter-Regular"),
+  url("../fonts/Inter-Regular.woff2") format("woff2"),
+  url("../fonts/Inter-Regular.woff") format("woff"),
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: "Gilroy-Semibold";
+  font-style: normal;
+  font-display: swap;
+  src: local("Gilroy-Semibold"),
+    url("../fonts/Gilroy-Semibold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Semibold.woff") format("woff"),
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-display: swap;
+  src: local("Gilroy-Bold"),
+  url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+  url("../fonts/Gilroy-Bold.woff") format("woff"),
+}
