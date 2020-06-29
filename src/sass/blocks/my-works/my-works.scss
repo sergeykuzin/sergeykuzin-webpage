@@ -96,7 +96,7 @@
   font-size: 16px;
   color: rgb(107, 107, 107);
 
-  @include mobile-width-only {
+  @include mobile-tablet-width-only {
     flex-direction: column;
   }
 }
@@ -153,6 +153,10 @@
 }
 .works__project-on-website {
   @include mobile-width-only {
+    margin-bottom: 16px;
+  }
+
+  @media screen and(min-width: 750px) and (max-width: 974px) {
     margin-bottom: 16px;
   }
 }
