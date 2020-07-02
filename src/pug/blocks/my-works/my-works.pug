@@ -4,7 +4,7 @@ section.my-works
       span My works
     ul.my-works__list
       li.my-works__item
-        picture
+        picture.my-works__image
           source(
             type="image/webp"
             srcset="img/webp/my-works/artactive.webp"
@@ -19,7 +19,7 @@ section.my-works
             srcset="img/my-works/artactive.jpg"
             media="(min-width: 375px)"
             )
-          img(src="img/my-works/artactive-mobile.jpg", alt="Preview of my work").my-works__image
+          img(src="img/my-works/artactive.jpg", alt="Preview of my work")
         .my-works__description-wrapper
           a(
             href="https://sergeykuzin.github.io/portfolio/artactive/index.html"
@@ -47,7 +47,7 @@ section.my-works
               target="_blank"
               ).my-works__project-on-github.button.secondary-button Project on github
       li.my-works__item
-        picture
+        picture.my-works__image
           source(
             type="image/webp"
             srcset="img/webp/my-works/sparta.webp"
@@ -62,7 +62,7 @@ section.my-works
             srcset="img/my-works/sparta.jpg"
             media="(min-width: 375px)"
             )
-        img(src="img/my-works/sparta.jpg", alt="Preview of my work").my-works__image
+          img(src="img/my-works/sparta.jpg", alt="Preview of my work")
         .my-works__description-wrapper
           a(
             href="https://sergeykuzin.github.io/portfolio/sparta/index.html"
@@ -87,5 +87,48 @@ section.my-works
               ).works__project-on-website.button.primary-button Go to website
             a(
               href="https://github.com/sergeykuzin/sparta---portfolio"
+              target="_blank"
+              ).my-works__project-on-github.button.secondary-button Project on github
+      li.my-works__item
+        picture.my-works__image
+          source(
+            type="image/webp"
+            srcset="img/webp/my-works/sedona.webp"
+            media="(min-width: 375px)"
+            )
+          source(
+            type="image/webp"
+            srcset="img/webp/my-works/sedona-mobile.webp"
+            )
+          source(
+            type="image/webp"
+            srcset="img/my-works/sedona.jpg"
+            media="(min-width: 375px)"
+            )
+          img(src="img/my-works/sedona.jpg", alt="Preview of my work")
+        .my-works__description-wrapper
+          a(
+            href="https://sergeykuzin.github.io/portfolio/sedona/index.html"
+            target="_blank"
+            title="Go to website"
+            ).my-works__project-title.hover-underline Sedona
+          ul.my-works__implementation-list
+            li.my-works__implementation-item PUG, SCSS, ES6+, Gulp
+            li.my-works__implementation-item HTML5 video API, Google Maps Api
+            li.my-works__implementation-item Responsive image via html tag <picture>
+          ul.my-works__project-tested-list
+            li.my-works__project-tested-item Google Chrome 83
+            li.my-works__project-tested-item Interner Explorer 11 
+            li.my-works__project-tested-item Microsoft Edge 83 
+            li.my-works__project-tested-item Safari 10
+            li.my-works__project-tested-item Firefox 77
+            li.my-works__project-tested-item Lighthouse 5.7.1 
+          .my-works__project-actions
+            a(
+              href="https://sergeykuzin.github.io/portfolio/sedona/index.html"
+              target="_blank"
+              ).works__project-on-website.button.primary-button Go to website
+            a(
+              href="https://github.com/sergeykuzin/sedona---portfolio"
               target="_blank"
               ).my-works__project-on-github.button.secondary-button Project on github
