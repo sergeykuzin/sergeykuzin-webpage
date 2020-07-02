@@ -136,4 +136,4 @@ gulp.task('build-prod-js', () => gulp
   )
   .pipe(gulp.dest(dist)));
 
-gulp.task('default', gulp.parallel('watch', 'build'));
+gulp.task('default', gulp.series('build', 'watch'));
