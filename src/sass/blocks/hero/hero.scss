@@ -1,3 +1,53 @@
 .hero {
+  display: flex;
+  justify-content: space-between;
   min-height: 480px;
+  margin-top: 74px;
+  padding-top: 65px;
+
+  @include mobile-width-only {
+    flex-direction: column;
+  }
+}
+.hero__content,
+.experience {
+  width: 50%;
+
+  @include mobile-width-only {
+    width: 100%;
+  }
+}
+.hero__title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: $gilroy-bold;
+  font-size: 38px;
+  color: rgb(20, 20, 23);
+}
+.hero__description {
+  margin-bottom: 24px;
+  font-family: $inter-regular;
+  font-size: 16px;
+  color: rgb(92, 92, 92);
+}
+.experience__title {
+  margin-bottom: 16px;
+  font-family: $gilroy-bold;
+  font-size: 26px;
+  color: rgb(20, 20, 23);
+}
+.experience__list {
+  padding-left: 24px;
+  list-style: disc;
+}
+.experience__item {
+  margin-bottom: 10px;
+}
+.underline {
+  display: inline;
+  background-image: linear-gradient(90deg, rgba(71, 61, 253, 0.4), rgba(252, 85, 188, 0.4));
+  background-repeat:repeat-x;
+  background-size: 100% 8px;
+  background-position: 0 85%;
 }
