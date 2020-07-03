@@ -3,10 +3,14 @@
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: rgb(250, 250, 250);
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background-color: $color-header-bg-light-theme; 
   z-index: 1000;
+
+  .dark-theme & {
+    background-color: $color-header-bg-dark-theme; 
+  }
 }
 .page-header__inner {
   display: flex;
@@ -23,21 +27,48 @@
   width: 132px;
   height: 42px;
   align-items: center;
-  // background-image: url('../img/page-header/logo-001.png');
-  // font-size: 0;
   cursor: pointer;
   font-family: $gilroy-bold;
   text-transform: uppercase;
-  color: #2b2b2f;
+  color: $color-link-light-theme; 
   text-decoration: none;
   font-size: 18px;
   line-height: 18px;
+
+  .dark-theme & {
+    color: $color-link-dark-theme;
+  }
 }
-.github {
-  width: 34px;
-  height: 34px;
-  background-image: url('../img/page-header/github.svg');
-  background-repeat: no-repeat;
+.change-theme-button {
+  border: 0;
+  background-color: transparent;
   font-size: 0;
   cursor: pointer;
+}
+.bulb-icon {
+  width: 32px;
+  height: 34px;
+  stroke-width: 1.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+
+  .dark-theme & .bulb-icon__light-stick {
+    stroke: #fddd57;
+  }
+}
+.bulb-icon__beams {
+  stroke: transparent;
+
+  .dark-theme & {
+    stroke: #fddd57;
+  }
+}
+.bulb-icon__outline { 
+  fill: none;
+  stroke: #2b2b2f;
+
+  .dark-theme & {
+    stroke: #e5e5e5;
+  }
 }

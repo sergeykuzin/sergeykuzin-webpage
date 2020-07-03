@@ -14,6 +14,11 @@ body {
   color: $primary-color-font;
 
   -webkit-font-smoothing: antialiased;
+  background-color: $color-bg-light-theme;
+
+  &.dark-theme {
+    background-color: $color-bg-dark-theme;
+  }
 }
 
 .container {
