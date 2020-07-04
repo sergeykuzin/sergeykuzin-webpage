@@ -1,6 +1,31 @@
 header.page-header
   .container.page-header__inner
     a(href="/").logo Sergey<br> Kuzin 
+    button(type="button").menu-toggle Open menu
+      svg.menu-toggle-icon(
+        enable-background='new 0 0 20 20'
+        version='1.1'
+        viewbox='0 0 20 20'
+        xml:space='preserve'
+        xmlns='http://www.w3.org/2000/svg'
+        )
+        rect(x='0' y='0' width='4' height='4')
+        rect(x='8' y='8' width='4' height='4')
+        rect(x='16' y='8' width='4' height='4')
+        rect(x='0' y='8' width='4' height='4')
+        rect(x='8' y='16' width='4' height='4')
+        rect(x='8' y='0' width='4' height='4')
+        rect(x='0' y='16' width='4' height='4')
+        rect(x='16' y='16' width='4' height='4')
+        rect(x='16' y='0' width='4' height='4')
+    nav.main-nav
+      ul.main-nav__list
+        li.main-nav__item
+          a.main-nav__link(href="https://github.com/sergeykuzin" target="_blank") Github
+        li.main-nav__item
+          a.main-nav__link(href="https://www.linkedin.com/in/sergey-kuzin-255b32193/" target="_blank") LinkedIn
+        li.main-nav__item
+          a.main-nav__link(href="https://www.codewars.com/users/sergeyKuzin/" target="_blank") Codewars 
     button(type="button").change-theme-button Change theme
       svg.bulb-icon(version='1.1' viewbox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg')
         g.bulb-icon__beams
